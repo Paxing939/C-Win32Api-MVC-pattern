@@ -1,0 +1,332 @@
+// Microsoft Visual C++ generated resource script.
+//
+#pragma code_page(65001)
+
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Русский (Россия) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ADD DIALOGEX 0, 0, 156, 86
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "О программе 5"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "ОК",IDOK,62,65,50,14,WS_GROUP
+    LTEXT           "Enter number, you want to put in container",IDC_STATIC,7,7,142,8
+    EDITTEXT        IDC_EDIT1,7,19,142,14,ES_AUTOHSCROLL
+    LTEXT           "Enter degree",IDC_STATIC,7,35,43,8
+    EDITTEXT        IDC_EDIT2,7,47,142,14,ES_AUTOHSCROLL
+END
+
+IDD_DEL DIALOGEX 0, 0, 200, 91
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "ОК",IDOK,61,70,50,14
+    LTEXT           "Enter some info about element from container",IDC_STATIC,15,18,168,8
+    EDITTEXT        IDC_EDIT1,20,41,152,14,ES_AUTOHSCROLL
+END
+
+IDD_GET DIALOGEX 0, 0, 256, 79
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "GET",IDC_BUTTON_1,41,58,50,14
+    EDITTEXT        IDC_EDIT1,15,34,97,14,ES_AUTOHSCROLL
+    LTEXT           "Enter text you wanna get",IDC_STATIC,19,14,97,8
+    LTEXT           "Text you requested:",IDC_STATIC,121,14,97,8
+    LTEXT           "Get any element and it will be shown here",IDC_STATIC1,121,28,128,29
+    DEFPUSHBUTTON   "OK",IDC_BUTTON_2,155,58,50,14
+END
+
+IDM_ABOUT DIALOGEX 0, 0, 232, 90
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "ОК",IDOK,86,69,50,14
+    LTEXT           "Текст о том кто это написал",IDC_STATIC,43,28,154,8
+    LTEXT           "2019",IDC_STATIC,38,47,154,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ADD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 149
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 79
+    END
+
+    IDD_DEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 193
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 84
+    END
+
+    IDD_GET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 249
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 72
+    END
+
+    IDM_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 225
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MY5                 ICON                    "5.ico"
+
+IDI_SMALL               ICON                    "small.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_MY5 MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "Exit",                        ID_GAME_EXIT
+    END
+    POPUP "&Info"
+    BEGIN
+        MENUITEM "&About",                      IDM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_MY5 ACCELERATORS
+BEGIN
+    "?",            IDM_ABOUT,              ASCII,  ALT
+    "/",            IDM_ABOUT,              ASCII,  ALT
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_APP_TITLE           "5"
+    IDC_MY5                 "MY5"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEW_GAME             "5"
+    ID_ENEMY_COMPUTER       "5"
+    ID_GAME_EXIT            "5"
+    ID_SETTINGS             "5"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_STATIC_PLAYERWON    "5"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_RADIO1              "5"
+    IDC_RADIO2              "5"
+    IDC_RADIO3              "5"
+    IDC_STATIC_1WINER       "5"
+    IDC_STATIC_2WINER       "5"
+    IDC_STATIC_DRAWS        "5"
+    IDC_RADIO4              "5"
+    IDC_RADIO5              "5"
+END
+
+STRINGTABLE
+BEGIN
+    ID_ENEMY_HUMAN          "5"
+END
+
+STRINGTABLE
+BEGIN
+    ID_RADIO3X3             "5"
+    ID_RADIO4X4             "5"
+    ID_RADIO5X5             "5"
+    IDC_BUTTON_1            "5"
+    IDC_BUTTON_2            "5"
+    IDC_BUTTON_3            "5"
+    IDC_BUTTON_4            "5"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_RADIO6              "5"
+    IDC_EDIT1               "5"
+    IDC_STATIC1             "5"
+    IDC_STATIC2             "5"
+    IDC_STATIC3             "5"
+    IDC_STATIC4             "5"
+    IDC_BUTTON1             "5"
+END
+
+#endif    // Русский (Россия) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Нейтральный (по умолчанию) (неизвестное значение дополнительного кода языка: 0x8) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE LANG_NEUTRAL, 0x8
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN DIALOGEX 0, 0, 433, 148
+STYLE DS_ABSALIGN | DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_WINDOWEDGE | WS_EX_CONTROLPARENT | WS_EX_APPWINDOW | WS_EX_COMPOSITED
+CAPTION "Dialog"
+MENU IDC_MY5
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Добавить",IDC_BUTTON_1,7,70,138,71
+    PUSHBUTTON      "Удалить",IDC_BUTTON_3,146,70,140,71
+    PUSHBUTTON      "Взять",IDC_BUTTON_4,288,70,138,71
+    LTEXT           "Первый элемент по визитору:",IDC_STATIC,7,7,106,8
+    LTEXT           "Последний элемент по визитору:",IDC_STATIC,7,24,117,8
+    LTEXT           "*Пока ничего*",IDC_STATIC2,7,15,76,9
+    LTEXT           "*Пока ничего*",IDC_STATIC3,7,33,76,9
+    LTEXT           "Многочлен:",IDC_STATIC,7,41,153,11
+    LTEXT           "*Пока ничего*",IDC_STATIC4,7,51,419,15
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 426
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 141
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP                  "bitmap1.bmp"
+
+#endif    // Нейтральный (по умолчанию) (неизвестное значение дополнительного кода языка: 0x8) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
